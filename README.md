@@ -4,7 +4,7 @@
 
 ## Installation
 
-    $ npm install metalsmith-assets
+    $ npm i --save https://github.com/philipp90/metalsmith-assets.git#v1.0.0
 
 ## CLI Usage
 
