@@ -33,7 +33,8 @@ var assets = require('metalsmith-assets');
 
 metalsmith.use(assets({
   source: './assets', // relative to the working directory
-  destination: './assets' // relative to the build directory
+  destination: './assets', // relative to the build directory
+  skip: true  // optional (default: false) skip/do not copy already existing files
 }));
 ```
 

@@ -53,6 +53,7 @@ function assets(options) {
 
     function read(file, done) {
       var name = path.join(dest, path.relative(src, file));
+      if (files[name] && options.skip) return setImmediate(done);
       fs.stat(file, function (err, stats) {
         if (err) return done(err);
         fs.readFile(file, function (err, buffer) {
